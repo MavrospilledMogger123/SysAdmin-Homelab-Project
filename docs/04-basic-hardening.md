@@ -21,19 +21,13 @@ Ensure basic security via deactivating PermitRootLogin, deactivating passwordaut
 - Copy default file of jail.conf to custom file via 'sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local' !If not working outright, change directories until fail2ban
 - Find [sshd] and configure
 
-  [sshd]
-  
-    enabled = true
-  
-    maxretry = 5
-  
-    findtime = 10m
-  
-    bantime = 1h
-  
-- Restart to use configuration via 'sudo systemctl restart fail2ban'
-- Check status of jails 'sudo fail2ban-client status'
-- Check SSH jail 'sudo fail2ban-client status sshd'
+```ini
+[sshd]
+enabled = true
+maxretry = 5
+findtime = 10m
+bantime = 1h
+```
 
 #### Logs Monitoring
 
