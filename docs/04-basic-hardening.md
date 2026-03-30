@@ -47,24 +47,55 @@ bantime = 1h
 
 #### Logs Monitoring
 
-- Check ssh static logs via 'sudo journalctl -u ssh'
-- Check ssh live logs via 'sudo journalctl -u ssh -f'
-- Check finite amount of static logs 'sudo journalctl -u ssh -n x (-f for continuing live logs)'
+- Check ssh static logs via
+
+ ```sudo journalctl -u ssh```
+ 
+- Check ssh live logs via
+
+```sudo journalctl -u ssh -f```
+
+- Check finite amount of static logs
+
+```sudo journalctl -u ssh -n x (-f for continuing live logs)```
+ 
 - Same process for fail2ban logs
 
 ### UFW Configuration
 
-- Install ufw via 'sudo apt update && sudo apt install ufw'
-- Change ruleset with 'sudo ufw default deny incoming && sudo ufw default allow outgoing'
-- Ensure allowed connection via SSH with 'sudo ufw allow ssh'
-- Check status via 'sudo ufw status verbose'
-- If ssh allowed, enable with 'sudo ufw enable'
-- Improve security against bruteforce with 'sudo ufw limit ssh'
+- Install ufw via
+
+```sudo apt update && sudo apt install ufw```
+ 
+- Change ruleset with
+
+```sudo ufw default deny incoming && sudo ufw default allow outgoing```
+
+- Ensure allowed connection via SSH with
+
+```sudo ufw allow ssh```
+
+- Check status via
+
+```sudo ufw status verbose```
+
+- If ssh allowed, enable with
+
+```sudo ufw enable```
+
+- Improve security against bruteforce with
+
+```sudo ufw limit ssh```
 
 ## Verification
 
 - Verify if SSH key works without password prompt
-- Verify if fail2ban monitors SSH with 'sudo fail2ban-client status' and 'sudo fail2ban-client status sshd'
+- Verify if fail2ban monitors SSH with
+
+```sudo fail2ban-client status' and 'sudo fail2ban-client status sshd```
+
 - Verify if journalctl ssh outputs SSH logs
-- Verify ufw logs with 'journalctl -u ufw -f'
+- Verify ufw logs with
+
+```journalctl -u ufw -f```
 
