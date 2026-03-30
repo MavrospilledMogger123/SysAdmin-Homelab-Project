@@ -8,17 +8,33 @@ Ensure basic security via deactivating PermitRootLogin, deactivating passwordaut
 
 #### Setup
 
-- Configure sshd via 'sudo nano /etc/ssh/sshd_config
+- Configure sshd via
+
+```sudo nano /etc/ssh/sshd_config```
+
 - Switch PasswordAuthentication and PermitRootLogin to 'no'
 - Switch (if not enabled) usePAM to yes
 - Switch (if not enabled) pubkeyauthentication to yes
-- Install fail2ban via 'sudo apt update && sudo apt install fail2ban -y'
-- Enable via 'sudo systemctl enable fail2ban' and start via 'sudo systemctl start fail2ban'
-- Check for status via 'sudo systemctl status fail2ban'
+- Install fail2ban via
+
+```sudo apt update && sudo apt install fail2ban -y```
+
+- Enable and start via
+
+ ```sudo systemctl enable fail2ban && sudo systemctl start fail2ban```
+
+- Check for status via
+
+ ```sudo systemctl status fail2ban```
 
 #### Configuration of Fail2Ban
 
-- Copy default file of jail.conf to custom file via 'sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local' !If not working outright, change directories until fail2ban
+- Copy default file of jail.conf to custom file via
+
+```sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local```
+
+!If not working outright, change directories until fail2ban
+
 - Find [sshd] and configure
 
 ```ini
