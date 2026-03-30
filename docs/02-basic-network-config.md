@@ -5,4 +5,5 @@
 - Retrieve IP address with 'hostname -I'
 
 Server name: (chosen hostname)
+
 IP: (IP address)
