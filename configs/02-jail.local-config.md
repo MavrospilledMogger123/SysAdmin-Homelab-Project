@@ -1,0 +1,7 @@
+```ini
+[sshd]
+enabled = true
+maxretry = 5
+findtime = 10m
+bantime = 1h
+```
