@@ -2,7 +2,7 @@
 
 ### Goal
 
-Ensure basic security via deactivating PermitRootLogin, deactivating passwordauthentication, activating usePAM as well as pubkeyauthentication, installing/configuring fail2ban and enabling ufw with change of rules
+Ensure basic security via deactivating PermitRootLogin, deactivating passwordauthentication, activating usePAM as well as pubkeyauthentication, installing/configuring fail2ban and enabling ufw with change of rules.
 
 ### SSH Hardening
 
@@ -37,5 +37,3 @@ Ensure basic security via deactivating PermitRootLogin, deactivating passwordaut
 - Verify if fail2ban monitors SSH
 - Verify if journalctl ssh outputs SSH logs
 
-
-This concludes the basic server setup.
