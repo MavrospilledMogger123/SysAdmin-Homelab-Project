@@ -6,7 +6,10 @@ Ensure quick and safe access to server
 
 ### SSH Key
 
-- Create SSH key via 'ssh-keygen -t ed25519 -C user -f userkey'
+- Create SSH key via
+
+  ```ssh-keygen -t ed25519 -C user -f userkey'```
+  
 - Transfer public key to server via
 
 ```type ~\.ssh\(userfolder)\(userkey).pub | ssh (chosen username)@(ip address) "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"```
