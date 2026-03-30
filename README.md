@@ -3,7 +3,7 @@
 ## Overview
 
 This repository documents the setup of a secure Ubuntu server in a virtualized environment.
-The goal is to simulate real-world system administration tasks including server hardening, user management, and network security.
+The goal is to simulate real-world system administration tasks including server hardening, user management, and network security on a basic level.
 
 ## Environment
 
