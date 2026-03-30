@@ -48,7 +48,7 @@ bantime = 1h
 ## Verification
 
 - Verify if SSH key works without password prompt
-- Verify if fail2ban monitors SSH
+- Verify if fail2ban monitors SSH with 'sudo fail2ban-client status' and 'sudo fail2ban-client status sshd'
 - Verify if journalctl ssh outputs SSH logs
 - Verify ufw logs with 'journalctl -u ufw -f'
 
