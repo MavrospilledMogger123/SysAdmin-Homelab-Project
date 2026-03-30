@@ -1,5 +1,8 @@
 ## Installation
 
+### Goal
+Ensure a clear and simple installation setup to support further configuration.
+
 - Boot VM after hardware setup
 - Choose 'Try or Install Ubuntu server'
 - Select preferred language
