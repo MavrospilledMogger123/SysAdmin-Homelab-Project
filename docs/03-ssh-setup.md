@@ -8,7 +8,7 @@ Ensure quick and safe access to server
 
 - Create SSH key via
 
-  ```ssh-keygen -t ed25519 -C user -f userkey'```
+```ssh-keygen -t ed25519 -C user -f userkey'```
   
 - Transfer public key to server via
 
