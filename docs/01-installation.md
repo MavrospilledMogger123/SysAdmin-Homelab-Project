@@ -30,4 +30,6 @@ Password: (chosen password)
 - Reboot after installation completion
 - Press enter to eject medium
 - Login with password
-- Update system with 'sudo apt update && sudo apt upgrade'
+- Update system with
+
+```sudo apt update && sudo apt upgrade```
