@@ -14,7 +14,9 @@
 - 'Your name' is only cosmetic, no technical relevance
 
 Server name: <chosen hostname>
+
 User name: <chosen username>
+
 Password: <chosen password>
 
 - Skip Ubuntu Pro
