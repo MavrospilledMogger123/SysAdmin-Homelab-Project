@@ -13,11 +13,11 @@
 - Confirm destructive action
 - 'Your name' is only cosmetic, no technical relevance
 
-Server name: <chosen hostname>
+Server name: (chosen hostname)
 
-User name: <chosen username>
+User name: (chosen username)
 
-Password: <chosen password>
+Password: (chosen password)
 
 - Skip Ubuntu Pro
 - Install OpenSSH server for remote access after installation
