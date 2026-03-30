@@ -22,4 +22,9 @@ Add a second user with his own sudo rights, as well as transfer a SSH key to ens
 
 ```touch authorized_keys```
 
-- Use identical method
+- Use method
+
+```type ~\.ssh\(userfolder)\(userkey).pub | ssh (chosen username)@(ip address) "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"```
+from original host to transfer pubkey for new user
+
+
